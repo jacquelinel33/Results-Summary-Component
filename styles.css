@@ -48,6 +48,11 @@ CSS Reset File
 
 
   /* MAIN CSS */
+  @font-face {
+    font-family: 'Hanken';
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+    font-weight: 700;
+  }
 :root {
   --primary-color: #000;
   --background-color: hsl(241, 81%, 54%);
@@ -63,15 +68,28 @@ main {
   min-height: 100vh;
   color: var(--primary-color);
   font-size: 1.125rem;
+  font-family: 'Hanken';
 }
 
 .white {
   color: #fff;
 }
 
+.lavender {
+  color: var(--secondary-color)
+}
+
+.large-font {
+  font-size: 3.5rem;
+}
+
+.medium-font {
+  font-size: 1.4rem;
+}
+
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background: var(--secondary-background-gradient);
   display: flex;
@@ -84,11 +102,13 @@ main {
    text-align: center;
    background: var(--background-gradient-color);
    color: var(--secondary-color);
-   padding: 2em;
+   padding: 1em;
    display: grid;
-   gap: 1em;
+   /* gap: .2em; */
    justify-content: center;
    align-items: center;
+   border-bottom-left-radius: 1.5em;
+   border-bottom-right-radius: 1.5em;
 }
 
 
