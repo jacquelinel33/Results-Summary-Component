@@ -111,7 +111,50 @@ main {
    border-bottom-right-radius: 1.5em;
 }
 
+.summary {
+  display:flex;
+  flex-direction: column;
+  padding: 1.5em;
+  gap: 20px;
+}
 
+.summary__list {
+  display: grid;
+  gap: 20px;
+  padding-left: 0;
+  font-size: 1rem;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.red{
+  background-color:hsla(0, 100%, 67%, 0.1);
+}
+
+.yellow {
+  background-color:hsl(39, 100%, 56%, .1);
+}
+
+.green {
+  background-color:hsl(166, 100%, 37%, .1);
+}
+
+.blue {
+  background-color: hsl(234, 85%, 45%, .1);
+}
+
+button {
+  background-color: var(--button-color);
+  color: #fff;
+  padding: 1em 0;
+  border-radius: 40px;
+  border: none;
+}
 
 
 
