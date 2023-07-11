@@ -134,18 +134,22 @@ main {
 
 .red{
   background-color:hsla(0, 100%, 67%, 0.1);
+  color: hsla(0, 100%, 67%);
 }
 
 .yellow {
   background-color:hsl(39, 100%, 56%, .1);
+  color:hsl(39, 100%, 56%);
 }
 
 .green {
   background-color:hsl(166, 100%, 37%, .1);
+  color:hsl(166, 100%, 37%);
 }
 
 .blue {
   background-color: hsl(234, 85%, 45%, .1);
+  color: hsl(234, 85%, 45%);
 }
 
 button {
@@ -157,5 +161,9 @@ button {
 }
 
 
-
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 
